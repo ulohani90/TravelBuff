@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dropshadow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_small">
+
+        <com.application.travelbuff.widgets.CircularImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/user_image_height"
+            android:layout_height="@dimen/user_image_height"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <com.application.travelbuff.widgets.CustomTextViewBold
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_mini"
+                android:text="Umesh Lohani"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/font_large" />
+
+            <com.application.travelbuff.widgets.CustomTextView
+                android:id="@+id/feed_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 days ago"
+                android:textColor="@color/text_light_grey_color"
+                android:textSize="@dimen/font_mini" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/feed_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small">
+
+        <com.application.travelbuff.widgets.CustomTextViewBold
+            android:id="@+id/feed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beautiful Places you should visit before you die."
+            android:textColor="@color/text_heading_grey_color"
+            android:textSize="@dimen/font_large" />
+
+        <com.application.travelbuff.widgets.CustomTextView
+            android:id="@+id/feed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/dummy_text"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_color"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/like_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_thumb_up" />
+
+            <com.application.travelbuff.widgets.CustomTextView
+                android:id="@+id/feed_like"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/like_text"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/separator_color"></View>
+
+        <LinearLayout
+            android:id="@+id/credit_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_thumb_up" />
+
+            <com.application.travelbuff.widgets.CustomTextView
+                android:id="@+id/feed_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/credit_text"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/separator_color"></View>
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_thumb_up" />
+
+            <com.application.travelbuff.widgets.CustomTextView
+                android:id="@+id/feed_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/share_text"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

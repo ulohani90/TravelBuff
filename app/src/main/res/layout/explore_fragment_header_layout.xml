@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_48"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small"
+    android:background="@drawable/bg_dropshadow"
+    android:orientation="horizontal">
+
+    <com.application.travelbuff.widgets.CustomTextViewBold
+        android:id="@+id/heading_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:textColor="@color/text_heading_grey_color"
+        android:textSize="@dimen/font_medium" />
+
+    <com.application.travelbuff.widgets.CustomTextViewBold
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/green_btn_bg"
+        android:padding="@dimen/margin_small"
+        android:text="@string/see_all_text"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium" />
+
+</LinearLayout>

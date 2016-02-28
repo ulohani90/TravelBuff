@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_mini">
+
+    <com.application.travelbuff.widgets.CustomEdittext
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_places_text"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:textColorHint="@color/white_transparent"
+        android:textSize="@dimen/font_large" />
+
+
+</LinearLayout>
